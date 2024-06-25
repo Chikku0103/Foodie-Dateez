@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('A:/downloads/MYPORTFOLIO/FOODIEDATE/pexels-nicole-michalou-5779170.jpg'); /* Updated with the specified path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #ffffff; /* Default text color set to white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header .navbar {
+    background-color: rgba(238, 235, 48, 0.895); /* Semi-transparent background */
+}
+.match-container {
+    background-color: rgba#ffd700; /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(238, 235, 48, 0.895);
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+h1, label {
+    color: #ffffff; /* Set heading and label colors to white */
+}
+
+input[type="text"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4169E1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:  #4169E1;
+}
+
+.match-results {
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff; /* Ensure match results text is white */
+}

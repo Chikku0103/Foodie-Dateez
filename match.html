@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fooddiee Dateez</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Foodie Dateez - Match</title>
+            <link rel="stylesheet" href="match.css">
+        </head>
+        <body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid"> <!-- Add container-fluid class -->
+                    <a class="navbar-brand" href="#">Fooddiee Dateez</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="Fodieindex.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.html">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="container">
+                <h1>Find Your Foodie Match</h1>
+                <form id="matchForm">
+                    <div class="form-group">
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location" placeholder="Enter your location">
+                    </div>
+                    <div class="form-group">
+                        <label for="interests">Food Interests:</label>
+                        <input type="text" id="interests" name="interests" placeholder="Enter your food interests">
+                    </div>
+                    <div class="form-group">
+                        <label for="matchType">Match Type:</label>
+                        <select id="matchType" name="matchType">
+                            <option value="date">Date</option>
+                            <option value="friends">Friends</option>
+                            <option value="group">Group Food</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <div>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="profilePic">Profile Picture:</label>
+                        <input type="file" id="profilePic" name="profilePic">
+                    </div>
+                    <button type="button" onclick="findMatch()">Find Match</button>
+                </form>
+                <div id="results"></div>
+            </div>
+            <script src="match.js"></script>
+        </body>
+        </html>
+        
+        
+    </header>
+    <main>
+        <section class="match-container">
+            <div class="container">
+                <h1 class="text-center mb-5">Find Your Foodie Match!</h1>
+                <form id="match-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="location">Location:</label>
+                                <input type="text" class="form-control" id="location" placeholder="Enter your location">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="food-interest">Food Interest:</label>
+                                <select id="food-interest" class="form-control">
+                                    <option value="">Select an option</option>
+                                    <option value="Italian">Italian</option>
+                                    <option value="Mexican">Mexican</option>
+                                    <option value="Indian">Indian</option>
+                                    <option value="Chinese">Chinese</option>
+                                    <option value="Vegan">Vegan</option>
+                                    <option value="Vegetarian">Vegetarian</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Find Matches</button>
+                </form>
+                <div class="match-results mt-5">
+                    <!-- Match results will be displayed here -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
